@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #171717;
+}
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.box-container{
+    margin-top: 10rem;
+    background-color: #fffdfd;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 1rem;
+    padding:6rem;
+    gap: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.box-container h1 {
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.box-container label {
+    font-family: 'Poppins', sans-serif;
+}
+.box-container input{
+    padding: .5rem 3rem;
+    border: none;
+    border-radius: .2rem;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    text-align: center;
+    font-size: 1.3rem,;
+}
+.box-container input:focus{
+    outline: none;
+    border-bottom: 1px solid black;
+}
+.box-container button {
+    margin-top: 2rem;
+    border-radius: .2rem;
+    border: none;
+    padding: 1.7rem;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    background-color: #171717;
+    color: white;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.3rem;
+    transition: 200ms;
+}
+.box-container button:hover{
+    background-color: #7f7f7f;
+    cursor: pointer;
+}
+
+#resultado{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    color: red;
+}
+
+@media (max-width:375px){
+    .box-container{
+        margin-top: 0;
+        background-color: #fffdfd;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 0rem;
+        padding:8.4rem 3.5rem;
+        gap: 2rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .box-container button {
+        margin-top: 2rem;
+        border-radius: .2rem;
+        border: none;
+        padding: 1.7rem;
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+        background-color: #171717;
+        color: white;
+        font-family: 'Poppins',sans-serif;
+        font-size: 1.3rem;
+        transition: 200ms;
+    }
+    .box-container button:hover{
+        background-color: #7f7f7f;
+    }
+  }
